@@ -41,6 +41,16 @@ input {
   color: #333;
 }
 
+.task-input {
+  flex: 2;
+}
+
+.date-input {
+  flex: 1;
+  min-width: 120px;
+  font-family: inherit;
+}
+
 input:focus {
   border-color: #764ba2;
   background: white;
@@ -124,6 +134,27 @@ button[type="submit"]:active {
 .todo-item.completed .text {
   text-decoration: line-through;
   color: #888;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.deadline {
+  font-size: 0.85rem;
+  color: #666;
+  background-color: #f0f0f0;
+  padding: 2px 8px;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+
+.todo-item.completed .deadline {
+  color: #bbb;
 }
 
 .delete-btn {
